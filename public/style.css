@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.products {
+  height: 25vh;
+  width: 40vh;
+  background-color: cadetblue;
+  border-radius: 10px;
+  border: 2px black solid;
+  color: white;
+  margin: 1rem;
+  text-align: center;
+}
+
+.companies {
+  height: 25vh;
+  width: 40vh;
+  background-color: grey;
+  border-radius: 10px;
+  border: 2px black solid;
+  color: white;
+  margin: 1rem;
+  text-align: center;
+}
