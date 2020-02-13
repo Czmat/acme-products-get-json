@@ -35,8 +35,8 @@
           const { products, companies } = this.state;
           return (
             <div className="container">
-              <h1>Products</h1>
               <div className="cards">
+                <h1>Products</h1>
                 {products.map(product => {
                   return (
                     <div className="products" key={product.id}>
@@ -47,15 +47,19 @@
                   );
                 })}
               </div>
-              {companies.map(company => {
-                return (
-                  <div className="companies" key={company.id}>
-                    <h3>{company.name}</h3>
-                    <p>Phone: {company.phone}</p>
-                    <p>From: {company.state}</p>
-                  </div>
-                );
-              })}
+
+              <div className="cards">
+                <h1>Companies</h1>
+                {companies.map(company => {
+                  return (
+                    <div className="companies" key={company.id}>
+                      <h3>{company.name}</h3>
+                      <p>Phone: {company.phone}</p>
+                      <p>From: {company.state}</p>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           );
         }
